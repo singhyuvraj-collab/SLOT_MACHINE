@@ -1,0 +1,88 @@
+# SLOT MACHINE
+
+NAME = (input("enter your name: "))
+print("Welcome" +" " + NAME)
+
+MONEY = int(input("enter the amount of money you want to deposit: "))
+
+min_value = 20 # this is the minimum balance the user should have to spin once 
+max_value = 1000
+max_spins = 10
+
+if MONEY < min_value:
+    print("Not enough money") # a checkpoint to check if the user have minimum balance or not
+    exit()
+if MONEY > max_value:
+    print("Deposit limit is", max_value)
+    exit()
+
+
+starting_MONEY = MONEY
+total_spins = 0
+total_winnings = 0
+
+import random
+symbols = ["7", "🍊", "⭐", "❤️", "🏆"]
+symbol_values = {
+    "🍊": 10,
+    "⭐": 20,
+    "❤️": 30,
+    "🏆": 50,
+    "7": 100
+    }
+
+while MONEY >= min_value and total_spins < max_spins:
+    left_money = MONEY - min_value
+    total_spins = total_spins + 1
+
+    symbol_1 = random.choice(symbols)
+    symbol_2 = random.choice(symbols)
+    symbol_3 = random.choice(symbols)
+
+    print(symbol_1, symbol_2, symbol_3)
+    value_1 = symbol_values[symbol_1]
+    value_2 = symbol_values[symbol_2]
+    value_3 = symbol_values[symbol_3]
+
+
+    if symbol_1 == "7" and symbol_2 == "7" and symbol_3 == "7":
+        reward = 500
+        print("it's a jackpot. THALA FOR A REASON")
+
+    elif symbol_1 == symbol_2 and symbol_2==symbol_3:
+        reward = value_1 * value_2 * value_3
+        print(reward)
+
+    elif symbol_1 == symbol_3:
+        reward = value_3 + value_1
+        print(reward)
+
+    elif symbol_3 == symbol_2:
+        reward = value_3 + value_2
+        print(reward)
+
+    else:
+        reward = 0
+        print("OOPS!")
+
+    MONEY = left_money + reward
+    total_winnings = total_winnings + reward
+    print("your total winning is:", MONEY)
+
+    if MONEY < min_value:
+        print("Deposit more money " + NAME)
+        break
+
+    AGAIN = (input("Do you want to spin again? yes or no: ")).lower()
+    if AGAIN == "no":
+        break
+
+if total_spins == max_spins:
+    print("Limit reached " + NAME)
+
+print("Thank you for plaiyng: ", NAME)
+print("Your staring money was: ", starting_MONEY)
+print("Total spins are: ", total_spins)
+print("Your total winning is: ", total_winnings)
+print("the final money is: ", MONEY)   
+
