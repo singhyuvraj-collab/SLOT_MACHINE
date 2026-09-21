@@ -18,4 +18,5 @@ Game Rules
 - Two matching symbols give the sum of their values.
 
 image of the output
-<img width="1422" height="409" alt="image" src="https://github.com/user-attachments/assets/e4be52de-7b32-4fd8-bfb5-aed8880539a5" />
+<img width="1258" height="399" alt="image" src="https://github.com/user-attachments/assets/164ccb76-dbb5-49bb-a833-991bfa7fd935" />
+
