@@ -1,7 +1,7 @@
 # SLOT MACHINE
 
-NAME = (input("enter your name: "))
-print("Welcome" +" " + NAME)
+NAME = (input("enter your name: ")).strip()
+print(f"Welcome {NAME}!\n)
 
 MONEY = int(input("enter the amount of money you want to deposit: "))
 
@@ -15,7 +15,6 @@ if MONEY < min_value:
 if MONEY > max_value:
     print("Deposit limit is", max_value)
     exit()
-
 
 starting_MONEY = MONEY
 total_spins = 0
@@ -69,9 +68,13 @@ while MONEY >= min_value and total_spins < max_spins:
         reward = 0
         print("OOPS!")
 
-    MONEY = left_money + reward
-    total_winnings = total_winnings + reward
-    print("your total winning is:", MONEY)
+    if reward == 0:   # in case if the user is not winning something, then the spin fee will not be refunded
+        MONEY = left_money
+        total_winnings = total_winnings + reward
+        print("OOPS! you didn't won any reward", MONEY)
+    if reward != 0: # in case the user is winning, spin fee will be refunded
+        MONEY = left_money + reward + 20
+        print("Your current count of money is: ", MONEY)
 
     if MONEY < min_value:
         print("Deposit more money " + NAME)
