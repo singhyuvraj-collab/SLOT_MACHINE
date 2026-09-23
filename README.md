@@ -38,27 +38,27 @@ The values are stored in a Python dictionary and are used when calculating rewar
 
 The program follows this general flow:
 Start
-  ↓
+  >
 Enter Player Name
-  ↓
+  >
 Enter Starting Money
-  ↓
+  >
 Check Starting Money
-  ↓
+  >
 Generate 3 Random Symbols
-  ↓
+  >
 Check Symbol Combination
-  ↓
+  >
 Calculate Reward
-  ↓
+  >
 Update Balance
-  ↓
+  >
 Ask Whether to Continue
-  ↓
+  >
 Continue / Stop
-  ↓
+  >
 Display Game Summary
-  ↓
+  >
 End
 
 # Winning Conditions
@@ -78,7 +78,9 @@ The program checks the symbols in the following order:
 6. *No matching symbols*
    - No reward is given.
 
-# image of the output
+# image of the output in VS CODE
 <img width="1470" height="502" alt="image" src="https://github.com/user-attachments/assets/bbcd1356-f018-4481-a66a-21f39ecacc30" />
 
+# image of the output in powershell
+<img width="1317" height="796" alt="image" src="https://github.com/user-attachments/assets/265b4597-b726-4dc3-acfb-f0fc948e3048" />
 
