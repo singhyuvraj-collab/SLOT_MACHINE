@@ -77,8 +77,3 @@ The program checks the symbols in the following order:
 
 # image of the output in VS CODE
 <img width="1470" height="502" alt="image" src="https://github.com/user-attachments/assets/bbcd1356-f018-4481-a66a-21f39ecacc30" />
-
-# image of the output in powershell
-<img width="1317" height="796" alt="image" src="https://github.com/user-attachments/assets/2cae9397-28e2-45c6-ba21-9a79a547e6a8" />
-
-
