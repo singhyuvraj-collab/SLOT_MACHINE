@@ -25,13 +25,12 @@ A simple command-line based Slot Machine game developed in Python.
 - Random module
 
 The game uses five different symbols:
-
- SYMBOL -> VALUE 
- 7  ->  100
-🍊 ->  10  
-⭐ ->  20  
-❤️ ->  30 
-🏆 ->  50 
+SYMBOL -> VALUE, 
+ 7  ->  100,
+🍊 ->  10,  
+⭐ ->  20,  
+❤️ ->  30, 
+🏆 ->  50, 
 The values are stored in a Python dictionary and are used when calculating rewards.
 
   # WORKFLOW OF THE PROGRAM : 
@@ -62,14 +61,12 @@ Display Game Summary
 End
 
 # Winning Conditions
-
 The program checks the symbols in the following order:
-
 1. *Three 7s*
    - Jackpot reward of 500.
 2. *Three identical symbols*
    - The values of the three symbols are multiplied.
-3. *First and third symbols match**
+3. *First and third symbols match*
    - Their values are added.
 4. *Second and third symbols match*
    - Their values are added.
@@ -82,5 +79,6 @@ The program checks the symbols in the following order:
 <img width="1470" height="502" alt="image" src="https://github.com/user-attachments/assets/bbcd1356-f018-4481-a66a-21f39ecacc30" />
 
 # image of the output in powershell
-<img width="1317" height="796" alt="image" src="https://github.com/user-attachments/assets/265b4597-b726-4dc3-acfb-f0fc948e3048" />
+<img width="1317" height="796" alt="image" src="https://github.com/user-attachments/assets/2cae9397-28e2-45c6-ba21-9a79a547e6a8" />
+
 
