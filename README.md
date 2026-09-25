@@ -69,7 +69,7 @@ The project does not require `pip` or any external package installation.
 Clone the repository using Git:
 
 ```bash
-git clone <YOUR-GITHUB-REPOSITORY-URL>
+git clone <https://github.com/singhyuvraj-collab/SLOT_MACHINE>
 ```
 
 Then move into the project directory:
@@ -363,7 +363,7 @@ Possible improvements include:
 If Python is already installed, the project can be started with:
 
 ```bash
-git clone <>
+git clone <https://github.com/singhyuvraj-collab/SLOT_MACHINE>
 cd Slot-Machine
 python slot_machine.py
 ```
