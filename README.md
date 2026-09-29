@@ -24,14 +24,16 @@ No external Python packages are required.
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
 
 ```text
-Slot-Machine/
+SLOT_MACHINE/
 │
-├── slot_machine.py
-└── README.md
+├── slot_machine.py      # Main Python program
+├── README.md            # Project documentation and setup instructions
+└── STATEMENT.md         # Project statement and description
 ```
+
 
 * `slot_machine.py` — Contains the complete game implementation.
 * `README.md` — Project documentation and setup instructions.
